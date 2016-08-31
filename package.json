@@ -1,0 +1,25 @@
+{
+    "name": "practice-project",
+    "version": "1.0.0",
+    "description": "This project is for practice purpose",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencis": {
+        "express": "latest",
+        "mongoose": "latest",
+        "body-parser": "latest",
+        "bootstrap": "latest",
+        "font-awesome": "latest",
+        "animate.css": "latest",
+        "angular": "latest",
+        "angular-ui-router" : "latest" 
+    },
+    "repository": {
+    "type": "git",
+    "url": "https://www.github.com/unitarySleet/unitary"
+    },
+    "author": "ajit_gupta <ajitgupta7395@gmail.com>",
+    "license": "ISC"
+}

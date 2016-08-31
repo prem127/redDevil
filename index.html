@@ -1,0 +1,59 @@
+﻿<!-- index.html
+    created by unitarySleet
+    on 24 August 2016
+-->
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="description" content="For Learning" />
+
+    <title>myProject | Introduction</title>
+    
+    <!--  CSS Files -->
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+
+    <!-- Font Awesome will work when you have the required font files like svg, ttf, eot-->
+    <link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css" />
+
+    <!-- Personalised Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="public/css/custom.css" />
+    
+    <!-- TODO Use Less/Sass -->
+
+</head>
+
+<body ng-app="myApp" id="myPage" data-spy="" data-target=".navbar" data-offset="">
+
+    <!--  ng-app attribute defines the angular application 
+          AngularJS extends HTML attributes elements
+        -->
+        <header ng-include="'public/views/templates/header.html'"></header> <!-- Header Template -->
+        <section class="content" ui-view>
+        </section>
+        <br />
+        
+        <footer ng-include="'public/views/templates/footer.html'"></footer> <!-- Footer Template-->
+        
+    <!-- Javascript Files -->
+    <!-- jQuery file is necessary for Bootstrap Plugins-->
+    <script src="public/js/jquery-1.12.4.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/angular/angular.min.js"></script>
+    <script src="public/js/angular/angular-ui-router-min.js"></script>
+
+    <!-- Routing and app.js -->
+    <script src="app.js"></script>
+    <script src="public/js/routes/routes.js"></script>
+    
+    <!-- Angular Custom Controller -->
+    <script src="public/js/controllers/HomeController.js"></script>
+    <script src="public/js/controllers/AboutController.js"></script>
+    <script src="public/js/controllers/ServiceController.js"></script>
+    <script src="public/js/controllers/ContactController.js"></script>
+</body>
+</html>

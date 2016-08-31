@@ -1,0 +1,97 @@
+﻿<div id="" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand page-scroll item" ui-sref-active="active" ui-sref="home" href="">
+                    <i class="fa fa-book">&nbsp;myProject #{{ 0 +1 }}</i>&nbsp;<i class="fa fa-smile-o"></i>
+                </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mobileNav">
+            <ul class="nav navbar-nav navbar-left">
+                <li ui-sref-active="active" class="item">
+                    <a class="page-scroll" ui-sref="about" href=""><i class="fa fa-angellist">&nbsp;About</i></a>
+                </li>
+                <li ui-sref-active="active" class="item">
+                    <a class="page-scroll" ui-sref="services" href=""><i class="fa fa-cog">&nbsp;Services</i></a>
+                </li>
+                <li ui-sref-active="active" class="item">
+                    <a class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <i class="fa fa-bolt">&nbsp;Our Works&nbsp; &nbsp;<span class="fa fa-caret-down"></span></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ui-sref-active="active" class="item">
+                        <a href="" ui-sref="works">Work #1</a></li>
+                    </ul>
+                </li>
+                <li ui-sref-active="active" class="item">
+                    <a class="page-scroll" ui-sref="blog" href=""><i class="fa fa-dashboard">&nbsp;Blog</i></a>
+                </li>
+                <li ui-sref-active="active" class="item">
+                    <a class="page-scroll" ui-sref="contact" href=""><i class="fa fa-phone-square">&nbsp;Contact</i></a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="page-scroll">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-github"></i>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-reddit-alien"></i>
+                        <i class="fa fa-snapchat-ghost"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-tumblr"></i>
+                        <i class="fa">We Are Everywhere</i>
+                        <i class="fa fa-hand-peace-o"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll"
+                       type="button"
+                       data-toggle="modal"
+                       data-target="#signIn"
+                       ui-sref="sign-in"
+                       href=""><i class="fa fa-lock">&nbsp;Sign In</i></a>
+                </li>
+                <li>
+                    <a class="page-scroll" type="button" ui-sref="sign-out" href=""><i class="fa fa-sign-in">&nbsp;Sign Up</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> <!-- Header-->
+<div class="modal fade" tabindex="-1" role="dialog" id="signIn" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#ededed;">
+                <h4 class="text-center"><i class="fa fa-sign-in"></i>&nbsp;&nbsp; Sign In</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username" />
+                </div>
+                <br />
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input type="password" class="form-control" placeholder="Password" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success">
+                    <i class="fa fa-key"></i>
+                </button>                
+            </div>
+        </div>
+    </div>
+</div>

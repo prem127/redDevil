@@ -1,0 +1,18 @@
+﻿<br /><br /><br />
+<div ng-controller="ContactController">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-10">
+                <input type="number" placeholder="Enter Mobile Number"
+                       ng-model="inputMobile" ng-change="changeMobile()"
+                       name="mobile" class="form-control" />
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-2">
+                <button class="btn btn-default" ng-click="btnContact()">
+                    <i class="fa fa-phone-square">&nbsp; {{ buttonValue }}</i>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+</div>
